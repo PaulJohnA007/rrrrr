@@ -40,7 +40,7 @@ $result = mysqli_query($connection, $sql);
             <li><a href="dashboard.html"><i class="fas fa-box"></i>Dashboard</a></li>
             <li><a href="employeeform.html"><i class="fas fa-paperclip"></i>Employee Form</a></li>
             <li><a href="attendance.html"><i class="fas fa-check"></i>Attendance</a></li>
-            <li><a href="employeelist.html"><i class="fas fa-users"></i>Employee List</a></li>
+           <!--  <li><a href="employeelist.html"><i class="fas fa-users"></i>Employee List</a></li> -->
             <li><a href="positionlist.php" class="btn-active"><i class="fas fa-user-tie"></i>Position List</a></li>
             <li><a href="allowancelist.html"><i class="fas fa-credit-card"></i>Allowance List</a></li>
             <li><a href="deductionlist.html"><i class="fas fa-equals"></i>Deduction List</a></li>
@@ -52,8 +52,7 @@ $result = mysqli_query($connection, $sql);
         <div class="card-body">
             <div class="logo-main">Employee's Position</div>
             <div class="attendance">
-                <div class="attendance-list">
-                    <h1>Position</h1>
+                <div class="attendance-list"> 
                     <table class="table">
                         <thead>
                             <tr>
