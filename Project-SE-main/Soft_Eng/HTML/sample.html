@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Registration</title>
+  <style>
+    /* Modal Styles */
+    .bg-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+      width: 100%;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .title-hed {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Camera Styles */
+    .camera-effect {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .video {
+      width: 100%;
+      max-width: 400px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .camera-button {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .canvas {
+      display: none;
+    }
+
+    /* Clock Styles */
+    .clock {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    /* Time Button Styles */
+    .Time-btn {
+      text-align: center;
+    }
+
+    .Time-btn button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .Time-btn button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-modal">
+  <div class="modal-content">
+    <div class="close">+</div>
+    <h2 class="title-hed">Admin Registration</h2>
+    
+    <!-- For Camera -->
+    <div class="camera-effect">
+      <video class="video" crossorigin="anonymous"></video>
+      <div class="camera-button">
+        <ion-icon name="camera-outline"></ion-icon>
+      </div>
+    </div>
+    <canvas class="canvas" width="500" height="400"></canvas>
+    
+    <!-- For Realtime Clock -->
+    <div class="clock" id="clock">00:00:00</div>
+    
+    <!-- Time Buttons -->
+    <div class="Time-btn">
+      <button type="time-submit">Time In</button>
+      <button type="time-submit">Time Out</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

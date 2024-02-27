@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header class="header">
+      <img src="images/bigbrewpic2.jpg" class="logo">
+      <a class="text"><div class="br-name">BigBrew Zamboanga</div></a>
+
+      <div class="selection">
+        <a href="index.html">HOME</a>
+        <!-- <a href="#">CONTACT</a>
+        <a href="#">ABOUT</a> -->
+        <a href="login_page.php" target="_self">SIGN UP</a>
+      </div>
+    </header>
+  <img src="images/bigbrewpic3.jpg" class="img">
+
+
+  <!--Login Staff-->
+
+  <div class="container">
+    <h2>Employee's Login</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="employeeSelect">Select Employee:</label>
+        <select id="employeeSelect" name="employeeSelect" required>
+          <option value="">--Select Employee--</option>
+          <option value="1">Paul John Acabo</option>
+          <option value="2">John Paulo Abrajano</option>
+          <option value="3">Leonardo Aquino</option>
+          <option value="3">Jamiri Hafiz</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <button id="sub-btn" for="cameraInput">Click here for Picture</button>
+        <input type="file" id="cameraInput" accept="image/*" capture="camera">
+      </div>
+      <div class="form-group">
+        <button type="submit">Login Now</button>
+      </div>
+    </form>
+  </div>
+
+  
+ <!--popup modal here -->
+  <div class="bg-modal">
+    <div class="modal-content">
+      <div class="close">+</div>
+      <h2 class="title-hed">-Staff Attendance-</h2>
+      
+       <!--for pic-->
+        <div class="camera-effect">
+          <video class="video" crossorigin="anonymous"></video>
+          <div class="camera-button">
+            <ion-icon name="camera-outline"></ion-icon>
+          </div>
+        </div>
+        <canvas class="canvas" width="500" height="400"></canvas>
+        
+  <!-- for realtime clock -->
+        <div class="clock" id="clock">00:00:00</div>
+      <div class="Time-btn">
+        <button type="time-submit">Time In</button>
+        <button type="time-submit">Time Out</button>
+      </div>
+    </div>
+
+  
+  
+
+<script src="js/camera.js"></script>
+<script src="js/index.js"></script>
+<script src="js/realtimeclock.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+
+
+</body>
+
+ 
+</html>
